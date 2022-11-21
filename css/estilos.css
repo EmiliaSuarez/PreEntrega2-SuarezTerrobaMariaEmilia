@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(133, 133, 133, 0.096);
+    font-family: 'Quicksand', sans-serif;
+}
+.contenedor {
+    max-width: 1100px; 
+    width: 90%; 
+    margin: 0px auto;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Header*/
+.logo{
+    text-align: center;
+}
+.logo1{
+    width: 250px;
+}
+
+/*Menu*/
+nav{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    text-align: center;
+}
+.menu{
+    background-color:rgba(80, 79, 79, 0.072);
+    list-style-type: none;
+    padding: 20px 0px;
+    margin: 20px auto;
+}
+.menu .item {
+    margin: 0px 70px 0px 0px;
+    display: inline-block;
+    text-align: center;
+}
+.menu .item a{
+    color: black;
+    text-decoration: none;
+}
+.menu .item a:hover{
+    color: white;
+    background-color: #f21d2f8d; 
+    padding: 10px 15px;
+    border-radius: 0.5cm;
+}
+.menu .item .presionado{
+    color: white;
+    background-color: #F21D2F;
+    padding: 10px 15px;
+    border-radius: 0.5cm;
+}
+
+
+/*Inicio*/
+.section1{
+    border: #f21d2fa6 solid;
+    background-image: url(../fotos/fotogrupal.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    padding: 10px;
+    margin: 75px;
+}
+.section1 p{
+    background-color: rgb(182, 178, 178);
+    opacity: .7;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15px;
+    color: rgb(6, 6, 6);
+    margin: 140px 65px 0px 65px;
+    text-align: center;
+}
+.section1 h2{
+    color:#ffffff;
+    font-size: 65px;
+    margin: 30px;
+    text-align: center;
+}
+.section2{
+    text-align: center;
+}
+.section2 div{
+    display: inline-block;
+    margin: 0px 35px;
+    width: 40%;
+    padding: 20px;
+}
+.section2 h2{
+    font-size: 30px;
+}
+.section2 div p{
+    font-size: 20px;
+}
+.mision{
+    background-color:#F21D2F;
+    color: white;
+}
+.vision{
+    border: #F21D2F solid;
+}
+
+
+/*Deportes*/
+.section3{
+    text-align: center;
+}
+.section3 div{
+    display: inline-block;
+    width: 40%;
+    padding: 20px;
+    margin: 20px;
+    height: 550px;
+}
+.section3 h2{
+    color: #F21D2F;
+    font-size: 40px;
+    border-bottom: #F21D2F solid;
+    margin: 0px 450px;
+}
+.natacion{
+    background-color:#9dbf21b0;
+    border: #75920bfc solid;
+}
+.natacion img{width: 376px;}
+.natacion h3{
+    color:#60770d;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.natacion p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.futbol{
+    background-color:#36abd9a7;
+    border: #075370 solid;
+}
+.futbol img{ width: 300px;}
+.futbol h3{
+    color:#075370;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.futbol p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.zumba{
+    background-color:#f28705cb;
+    border:#d16900 solid;
+}
+.zumba img{width: 357px;}
+.zumba h3{
+    color: #d16900;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.zumba p{
+    margin-top: 15px;
+    font-size: 20px;  
+}
+.gimnasia{
+    background-color:#f21d79b7;
+    border:#d4005c solid;
+}
+.gimnasia img{width: 300px;}
+.gimnasia h3{
+    color: #d4005c;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.gimnasia p{
+    margin-top: 15px;
+    font-size: 20px; 
+}
+.baile{
+    text-align: center;
+    background-color:#8c1b8497;
+    border: #64005e solid ;
+    margin: 20px 85px;
+    height: 380px;
+}
+.baile img{width: 300px;}
+.baile h3{
+    color: #64005e;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.baile p{
+    margin-top: 15px;
+    font-size: 20px; 
+}
+
+/*Alquileres*/
+.cancha {
+    background-image: url(../fotos/cancha.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #F21D2F solid;
+}
+.cancha h3, .salones h3{
+    color: white;
+    font-size: 40px;
+}
+.cancha p, .salones p{
+    font-size: 20px;
+    background-color: rgba(245, 245, 245, 0.656);
+    padding: 85px 20px;
+    margin: 30px;
+}
+.salones {
+    background-image: url(../fotos/salon.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #F21D2F solid;
+}
+
+/*Noticias*/
+.section4{
+    text-align: center;
+}
+.section4 h2{
+    color: #F21D2F;
+    font-size: 40px;
+    border-bottom: #F21D2F solid;
+    margin: 0px 320px 30px 320px;
+}
+.section4 img{
+    width: 700px;
+}
+
+
+/*Contacto*/
+.section5 h2{
+    color: #F21D2F;
+    font-size: 40px;
+    border-bottom: #F21D2F solid;
+    margin: 0px 450px 65px 450px;
+    text-align: center;
+}
+.section5 div{
+    display: inline-block;
+}
+.mapa{
+    margin: 0px 100px;
+}
+.mapa h3{
+    font-size: 25px;
+    text-align: center;
+    margin: 15px 0px;
+}
+.mapa img{
+    width: 400px;
+    margin-bottom: 50px;
+}
+legend{
+    color: #F21D2F;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    margin: 15px;
+}
+fieldset{
+    border: none;
+}
+fieldset div{
+    margin: 5px;
+}
+.redes{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.redes p{
+    display: inline;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+.redes img{
+    width: 25px;
+    margin: 0px 1px;
+    border-radius: 50%;
+}
+
+/*Pie de página*/
+footer{
+    background-color:rgba(80, 79, 79, 0.072);
+    padding: 15px;
+    margin-top: 75px;
+}
+footer li{
+    color:#b3000f;
+    list-style-type: none;
+    font-weight: bold;
+    text-align: center;
+}
