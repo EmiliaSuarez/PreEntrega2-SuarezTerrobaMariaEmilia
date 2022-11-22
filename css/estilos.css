@@ -4,101 +4,109 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgba(133, 133, 133, 0.096);
     font-family: 'Quicksand', sans-serif;
 }
-.contenedor {
-    max-width: 1100px; 
-    width: 90%; 
-    margin: 0px auto;
+.contenedor {  
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 3.1fr 0.7fr 0.5fr;
+    grid-template-areas:
+      "header"
+      "section1"
+      "section2"
+      "pie";
 }
-
-h2{
-    font-family: 'Montserrat', sans-serif;
+/*MENU*/
+.header{
+    grid-area: header;
+    display: flex;
+    background: linear-gradient(#e2e1e1,#ecebeb,#f6f6f6,#f6f6f6,#ecebeb,#e2e1e1);
+    justify-content: space-around;
 }
-
-/*Header*/
-.logo{
-    text-align: center;
+.header img{
+    width: 250px;
+    margin-right: 100px;
 }
 .logo1{
-    width: 250px;
+    border-radius: 10%;
+    margin:10px;
+    transition: all 1s ease;
 }
-
-/*Menu*/
-nav{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
-    text-align: center;
+.logo1:hover{
+  transform: scale(1.1, 1.1);
 }
-.menu{
-    background-color:rgba(80, 79, 79, 0.072);
-    list-style-type: none;
-    padding: 20px 0px;
-    margin: 20px auto;
+.nav-item{
+      margin:20px;
+      font-size: 20px;
+      font-weight: bold;
 }
-.menu .item {
-    margin: 0px 70px 0px 0px;
-    display: inline-block;
-    text-align: center;
+.nav-link{
+    padding: 10px 25px !important;
+    border-radius: 25px;
 }
-.menu .item a{
-    color: black;
-    text-decoration: none;
+.nav-link:hover{
+    color: white !important;
+    background-color: #f21d2f8d;
 }
-.menu .item a:hover{
-    color: white;
-    background-color: #f21d2f8d; 
-    padding: 10px 15px;
-    border-radius: 0.5cm;
-}
-.menu .item .presionado{
-    color: white;
+.presionado{
+    color: white !important;
     background-color: #F21D2F;
-    padding: 10px 15px;
-    border-radius: 0.5cm;
 }
 
-
-/*Inicio*/
+  
+/*Seccion1*/
 .section1{
-    border: #f21d2fa6 solid;
+    grid-area: section1;
+}
+.section1{
+    border: #F21D2F solid 6px;
     background-image: url(../fotos/fotogrupal.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
-    padding: 10px;
-    margin: 75px;
+    height: 650px;
+    padding: 100px;
+    margin: 90px;
 }
 .section1 p{
-    background-color: rgb(182, 178, 178);
+    background-color: rgba(182, 178, 178, 0.64);
     opacity: .7;
-    font-weight: bold;
+    font-weight:bolder;
     font-size: 25px;
-    padding: 15px;
-    color: rgb(6, 6, 6);
-    margin: 140px 65px 0px 65px;
+    padding: 70px;
+    color: black;
     text-align: center;
 }
 .section1 h2{
     color:#ffffff;
     font-size: 65px;
-    margin: 30px;
     text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+
+/*Seccion2*/
+.section2{
+    grid-area: section2;
+    display: flex;
 }
 .section2{
     text-align: center;
+    margin-top: 120px;
 }
 .section2 div{
-    display: inline-block;
-    margin: 0px 35px;
+    margin: 0px auto;
     width: 40%;
     padding: 20px;
 }
 .section2 h2{
     font-size: 30px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    margin-bottom: 25px;
 }
 .section2 div p{
     font-size: 20px;
@@ -111,86 +119,116 @@ nav{
     border: #F21D2F solid;
 }
 
-
-/*Deportes*/
-.section3{
+/* DEPORTES */
+.contenedor2 {  
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2.2 0.5fr;
+    grid-template-areas:
+      "header"
+      "section3"
+      "pie";
+}
+.header{
+    grid-area: header;
+}
+.pie{
+    grid-area: pie;
+}
+.contenedor2 h2{
+    color: #F21D2F;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 80px;
     text-align: center;
 }
-.section3 div{
-    display: inline-block;
+/*Seccion3 Todos*/
+.section3{
+    grid-area: section3;
+    text-align: center;
+    margin-top: 100px;
+}
+.section3 h3{
+    font-weight: bold;
+}
+.section3 p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+/*Seccion4*/
+.section4{
+    display: flex;
+}
+.section4 div{
+    margin: 0px auto;
+    margin-bottom: 50px;
     width: 40%;
     padding: 20px;
-    margin: 20px;
     height: 550px;
-}
-.section3 h2{
-    color: #F21D2F;
-    font-size: 40px;
-    border-bottom: #F21D2F solid;
-    margin: 0px 450px;
 }
 .natacion{
     background-color:#9dbf21b0;
     border: #75920bfc solid;
 }
-.natacion img{width: 376px;}
+.natacion img{width: 376px !important;}
 .natacion h3{
     color:#60770d;
     font-size: 35px;
     margin-bottom: 15px;
 }
-.natacion p{
-    margin-top: 15px;
-    font-size: 20px;
-}
 .futbol{
     background-color:#36abd9a7;
     border: #075370 solid;
 }
-.futbol img{ width: 300px;}
+.futbol img{ width: 300px !important;}
 .futbol h3{
     color:#075370;
     font-size: 35px;
     margin-bottom: 15px;
 }
-.futbol p{
-    margin-top: 15px;
-    font-size: 20px;
+/*Seccion5*/
+.section5{
+    display: flex;
+}
+.section5 div{
+    margin: 0px auto;
+    margin-bottom: 50px;
+    width: 40%;
+    padding: 20px;
+    height: 550px;
 }
 .zumba{
     background-color:#f28705cb;
     border:#d16900 solid;
 }
-.zumba img{width: 357px;}
+.zumba img{width: 357px !important;}
 .zumba h3{
     color: #d16900;
     font-size: 35px;
     margin-bottom: 15px;
 }
-.zumba p{
-    margin-top: 15px;
-    font-size: 20px;  
-}
 .gimnasia{
     background-color:#f21d79b7;
     border:#d4005c solid;
 }
-.gimnasia img{width: 300px;}
+.gimnasia img{width: 300px !important;}
 .gimnasia h3{
     color: #d4005c;
     font-size: 35px;
     margin-bottom: 15px;
 }
-.gimnasia p{
-    margin-top: 15px;
-    font-size: 20px; 
+/*Seccion 6*/
+.section6 div{
+    margin: 0px auto;
+    margin-bottom: 80px;
+    width: 90%;
+    padding: 20px;
+    height: 400px;
 }
 .baile{
-    text-align: center;
     background-color:#8c1b8497;
     border: #64005e solid ;
-    margin: 20px 85px;
-    height: 380px;
 }
 .baile img{width: 300px;}
 .baile h3{
@@ -198,12 +236,18 @@ nav{
     font-size: 35px;
     margin-bottom: 15px;
 }
-.baile p{
-    margin-top: 15px;
-    font-size: 20px; 
-}
 
-/*Alquileres*/
+/*ALQUILER*/
+.alquiler{
+    color: #F21D2F;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 80px 0px;
+    text-align: center;
+}
+.cansal{
+    margin-bottom: 80px;
+}
 .cancha {
     background-image: url(../fotos/cancha.jpg); 
     background-position: center;
@@ -214,12 +258,16 @@ nav{
 .cancha h3, .salones h3{
     color: white;
     font-size: 40px;
+    text-align: center;
+    font-weight: bold;
 }
 .cancha p, .salones p{
+    text-align: center;
     font-size: 20px;
     background-color: rgba(245, 245, 245, 0.656);
     padding: 85px 20px;
     margin: 30px;
+    font-weight: bold;
 }
 .salones {
     background-image: url(../fotos/salon.jpg); 
@@ -229,62 +277,74 @@ nav{
     border: #F21D2F solid;
 }
 
-/*Noticias*/
-.section4{
-    text-align: center;
-}
-.section4 h2{
+/*NOTICIAS*/
+.noticias{
     color: #F21D2F;
-    font-size: 40px;
-    border-bottom: #F21D2F solid;
-    margin: 0px 320px 30px 320px;
-}
-.section4 img{
-    width: 700px;
-}
-
-
-/*Contacto*/
-.section5 h2{
-    color: #F21D2F;
-    font-size: 40px;
-    border-bottom: #F21D2F solid;
-    margin: 0px 450px 65px 450px;
-    text-align: center;
-}
-.section5 div{
-    display: inline-block;
-}
-.mapa{
-    margin: 0px 100px;
-}
-.mapa h3{
-    font-size: 25px;
-    text-align: center;
-    margin: 15px 0px;
-}
-.mapa img{
-    width: 400px;
-    margin-bottom: 50px;
-}
-legend{
-    color: #F21D2F;
+    font-size: 50px;
     font-weight: bold;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
-    margin: 15px;
+    margin: 80px 0px;
+    text-align: center;
 }
-fieldset{
-    border: none;
+.carousel-inner h5{
+    font-weight: bold;
 }
-fieldset div{
-    margin: 5px;
+.footer{
+    margin-top: 80px;
 }
+
+/*CONTACTO*/
+.form-label{
+    font-weight: bold;
+}
+.contactoh2{
+    color: #F21D2F;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 80px 0px;
+    text-align: center;
+}
+.section8{
+    display: flex;
+}
+.contacto{
+    width: 50%;
+}
+.contacto h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.contacto2{
+    text-align: center;
+    width: 50%;
+}
+.contacto2 h3{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
 .redes{
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin: 50px auto;
+    margin-bottom: 80px;
+}
+.redes h3{
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.redes a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+    font-size: 25px;
+    margin: 0px 20px;
+}
+.redes a:hover{
+    color:#F21D2F;
 }
 .redes p{
     display: inline;
@@ -292,20 +352,223 @@ fieldset div{
     margin: 0px 20px;
 }
 .redes img{
-    width: 25px;
+    width: 50px;
     margin: 0px 1px;
     border-radius: 50%;
 }
-
-/*Pie de página*/
-footer{
-    background-color:rgba(80, 79, 79, 0.072);
-    padding: 15px;
-    margin-top: 75px;
+/*FOOTER*/
+.pie{
+    grid-area: pie;
+    background-color:rgba(80, 79, 79, 0.072); 
+    background: linear-gradient(#e2e1e1,#ecebeb,#f6f6f6,#f6f6f6,#ecebeb,#e2e1e1);
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
 }
 footer li{
-    color:#b3000f;
+    color:  #F21D2F;
     list-style-type: none;
     font-weight: bold;
     text-align: center;
+    font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*INICIO*/
+
+  /*Para tablet*/
+@media screen and (max-width: 768px){
+.contenedor{
+      grid-template-columns:1fr;
+      grid-template-areas:
+        "header"
+        "section1"
+        "section2"
+        "pie";
+}
+.section1{
+        margin: 50px;
+}
+.section1 p{
+        font-size: 15px;
+        padding: 50px;
+}
+.section1 h2{
+        font-size: 50px;
+        margin-bottom: 20px;
+}
+}
+/*para celular*/
+@media screen and (max-width: 600px){
+.contenedor{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "section1"
+        "section2"
+        "pie";
+}
+.section1{
+        height: 800px;
+        margin: 50px;
+}
+.section1 p{
+        font-size: 15px;
+        padding: 50px;
+}
+.section1 h2{
+        font-size: 50px;
+        margin-bottom: 20px;
+}
+.section2{
+        display: inline-block;
+}
+.section2{
+        text-align: center;
+        margin-top: 50px;
+}
+.section2 div{
+        margin: 0px auto;
+        width: 83%;
+        padding: 50px;
+}
+.section2 div p{
+        font-size: 15px;
+}
+.mision{
+       margin-bottom: 60px !important;
+} 
+}
+  
+/*DEPORTES y ALQUILERES*/
+@media screen and (max-width: 768px){
+/*Seccion3 Todos*/
+.section3 p{
+    font-size: 18px;
+}
+/*Seccion4*/
+.natacion img{width: 250px !important;}
+.futbol img{ width: 250px !important;}
+/*Seccion5*/
+.zumba img{width: 250px !important;}
+
+.gimnasia img{width: 250px !important;}
+.gimnasia h3{
+    font-size: 32px;
+}
+.cancha p, .salones p{
+    font-size: 15px;
+}
+}
+ /*para celular*/
+ @media screen and (max-width: 600px){
+.section3 h3{
+    font-weight: bold;
+}
+.section3 p{
+    font-size: 15px;
+}
+/*Seccion4*/
+.section4{
+    display: inline-block;
+}
+.section4 div{
+    width: 83%;
+    height: 450px;
+}
+.natacion img{width: 250px !important;}
+.futbol img{ width: 250px !important;}
+/*Seccion5*/
+.section5{
+    display: inline-block;
+}
+.section5 div{
+     width: 83%;
+    height: 450px;
+}
+.zumba img{width: 250px !important;}
+.gimnasia img{width: 250px !important;}
+/*Seccion 6*/
+.section6 div{
+        width: 83%;
+}
+.cancha p, .salones p{
+        font-size: 15px;
+}
+ }
+
+/*CONTACTO*/
+@media screen and (max-width: 768px){
+.contenedor2{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "header"
+          "section8"
+          "redes"
+          "pie";
+}
+.section8{
+    display: inline-block;
+}
+.contacto{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.contacto2{
+    width: 100%;
+}
+}
+
+/*para celular*/
+@media screen and (max-width: 600px){
+.contenedor2{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "section8"
+    "redes"
+    "pie";
+}
+.section8{
+    display: inline-block;
+}
+.contacto{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.redes a{
+    font-size: 20px;
+}
+.redes img{
+    width: 30px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

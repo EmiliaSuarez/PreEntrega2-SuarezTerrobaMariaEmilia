@@ -1,90 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../fotos/icono.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title> Club Magnus </title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--CSS only-->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="shortcut icon" href="../fotos/icono.png"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/estilos.css"> 
+        <title> Club Magnus </title>
+    </head>
 <body>
-    <div class="contenedor">
-    <header>
-        <div class="logo">
-            <img class="logo1" src="../fotos/logotipo.png" alt="Imagen de Logo" class="logo">
-        </div>
-    <nav>
-        <ul class="menu">
-            <li class="item"> <a href="../index.html"> Inicio </a> </li>
-            <li class="item"> <a href="./deportes.html"> Deportes </a> </li>
-            <li class="item"> <a href="./alquileres.html"> Alquileres </a> </li>
-            <li class="item"> <a href="./noticias.html" > Noticias Magnus </a> </li>
-            <li class="item"> <a href="./contacto.html" class="presionado"> Contacto </a> </li>
-        </ul>
-    </nav>
-    </header>
+    <div class="contenedor2">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="#"> <img src="../fotos/logotipo.png" class="logo1" alt=""> </a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                 </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                     </li>
+                     <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="./deportes.html">Deportes</a>
+                     </li>
+                     <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="./alquileres.html">Alquileres</a>
+                     </li>
+                     <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="./noticias.html">Noticias Magnus</a>
+                     </li>
+                     <li class="nav-item">
+                     <a class="nav-link active presionado" aria-current="page" href="./contacto.html">Contacto</a>
+                     </li>
+                 </ul>
+             </div>
+             </div>
+             </nav>
+         </header>
     <main>
-        <section class="section5">
-            <h2>Contacto</h2>
-        <div class="mapa">
-            <h3>Ubicación Lugar</h3> 
-            <img src="../fotos/mapa.jpg" alt="Ubicacion del Lugar">
+        <h2 class="contactoh2">Contacto</h2>
+        <section class="section8" data-aos="fade-right">
+        <div class="contacto">
+            <h3>¡Escribinos!</h3>
+        <form class="row g-3 needs-validation w-50 m-auto" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Juan" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Perez" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom03" class="form-label">Teléfono de contacto</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom04" class="form-label">Actividad de Interés</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Seleccionar...</option>
+                <option>Natación</option>
+                <option>Fútbol</option>
+                <option>Zumba</option>
+                <option>Gimnasia Artistica</option>
+                <option>Baile Revolution</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom05" class="form-label">Escribe tu consulta</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
         </div>
-        <div class="formulario">
-            <form action="">
-                <fieldset>
-                    <legend> Formulario de contacto </legend>
-                    <div>
-                        <label for="name">Escribe tu nombre</label>
-                        <input type="text" name="name" placeholder="Juan">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="surname">Escribe tu apellido</label>
-                        <input type="text" name="surname" placeholder="Perez">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="dep">Actividad de Interes</label>
-                        <select name="Deportes" id="">
-                            <option value="nat">Natación</option>
-                            <option value="fut">Fútbol</option>
-                            <option value="zum">Zumba</option>
-                            <option value="gim">Gimnasia Ritmica</option>
-                            <option value="baile">Baile Revolution</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="comentarios">Escribe tu consulta</label> <br>
-                        <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" value="Enviar Datos">
-                        <input type="reset" value="Borrar Datos">
-                    </div>
-                </fieldset>
-            </form>
+        <div class="contacto2">
+            <h3>Ubicacion 📍</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1280.6537401354099!2d-65.42591312975338!3d-24.78737880439496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b3780fb153%3A0xce8ba3788990f898!2sEspa%C3%B1a%201650%2C%20A4400%20Salta!5e0!3m2!1ses-419!2sar!4v1669132172495!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </section>
-        <div class="redes">
-            <img src="../fotos/whatsapp.png" alt="Logo WhatsApp">
-            <p>Whatsapp</p>
-            <img src="../fotos/instagram.jpg" alt="Logo Instagram">
-            <p>Instagram</p>
-            <img src="../fotos/facebook.jpg" alt="Logo Facebook">
-            <p>Facebook</p>  
+        <div class="redes" data-aos="fade-up">
+            <h3>👇🏼Nuestras Redes👇🏼</h3>
+            <a href=" https://api.whatsapp.com/send?text=Hola%20Casa%20Blanca!&phone=+5493875439770 " target="_blank"> <img src="../fotos/whatsapp.png" alt="">WhatsApp</a>
+            <a href=" https://instagram.com/clubmagnussalta?igshid=YmMyMTA2M2Y= " target="_blank"> <img src="../fotos/instagram.jpg" alt="">Instagram</a>
+            <a href=" https://www.facebook.com/colegiomagnussalta/?mibextid=LQQJ4d " target="_blank"> <img src="../fotos/facebook.jpg" alt="">Facebook</a>
         </div>
     </main>
-    <footer>
+    <footer class="pie">
         <ul>
             <li> Salta Capital - Argentina </li>
             <li> Calle España N° 1650</li>
@@ -92,5 +113,9 @@
         </ul>
     </footer> 
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ easing: 'ease-out-back',duration: 2000});</script>
 </body>
 </html>
